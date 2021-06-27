@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+        body{
+            background: url(https://learn.alwaysai.co/hubfs/object-dectection-4.jpg) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80pxs);
+            padding-left: 24%;
+            padding-top: 50px;
+            width: 100%;
+        }
+        .heading{
+            color: white;
+            font-size: 75px;
+            text-align: center;
+            background: url(https://i.pinimg.com/474x/58/6a/26/586a26dbad9fed14847cc28fc4a52932.jpg) no-repeat;
+            background-size: cover;
+            height: calc(100vh - 80pxs);
+            width: 53.5%;
+        }
+        .main {
+          background:black;
+          text-align: center;
+          padding-top: 50px;
+          padding-left: 50px;
+          width: 50%;
+          height: 400px;
+        }
+
+        .text{
+          width: 50%;
+          background: lightblue;
+          padding: 10px;
+        }
+
+        .button{
+            width: 150px;
+            height: 70px;
+            background: black;
+            color: yellow;
+            font-size: 20px;
+        }
+
+        .head{
+            color: pink;
+            font-size: 30px;
+        }
+
+        .head1{
+            color: pink;
+            font-size: 30px;
+        }
+
+        .video{
+            width: 50%; 
+            display: table-cell; 
+            background: red;
+            height: 350px;
+        }
+
+        .cam{
+            display: table-cell; 
+            background:blue;
+            height: 350px;
+        }
+        
+        </style>
+    </head>
+
+<body>
+
+    <div class="heading"> Multi-Track </div> <br><br>
+
+    <div class="main">
+        <div class="video">
+            <form action="upload" method="POST"> 
+                <h1 class="head"> Select the input file </h1> <br> <br> <br> 
+                <input type="file" name="input" class="text" > <br> <br> <br> 
+                    
+                <input type="submit" value="Track" class="button"> 
+            </form>
+        </div>
+        <div class="cam">
+             <form action="upload" method="POST"> 
+                <h1 class="head1"> Click here to run on camera </h1>  
+                <h1 class="head1"> Name the output file </h1> 
+                <input type="text" name="output" class="text" > <br> <br> <br> 
+                <input type="submit" value="Track" class="button"> 
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
